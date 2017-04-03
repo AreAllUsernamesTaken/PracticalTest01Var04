@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  tools:context="ro.pub.cs.systems.eim.practicaltest01.PracticalTest01MainActivity" >
+ 
+  <Button
+    android:id="@+id/navigate_to_secondary_activity_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:text="navigate_to_secondary_activity" />
+ 
+  <EditText
+    android:id="@+id/left_edit_text"
+
+      android:layout_marginTop="300dp"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:saveEnabled="false"
+    android:enabled="false"
+      android:inputType="textMultiLine"
+      android:ems="7"
+      android:layout_below="@id/navigate_to_secondary_activity_button"
+    android:gravity="center"
+      />
+
+  <Button
+    android:id="@+id/left_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="top left"
+    android:layout_alignBaseline="@+id/right_button"
+    android:layout_alignBottom="@+id/right_button"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+
+      android:layout_alignTop="@+id/center"
+      android:layout_toRightOf="@+id/center"/>
+
+
+  <Button
+      android:id="@+id/center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="center"
+      android:layout_marginTop="200dp"
+      android:layout_alignParentTop="true"
+      android:layout_toLeftOf="@+id/right_button"
+      android:layout_toStartOf="@+id/right_button" />
+ 
+  <Button
+    android:id="@+id/right_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:text="top right"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="100dp"
+      />
+
+
+  <Button
+      android:id="@+id/bottom_right_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="bottom left"
+      android:layout_alignBaseline="@+id/bottom_left_button"
+      android:layout_alignBottom="@+id/bottom_left_button"
+      android:layout_alignParentLeft="true"
+      android:layout_alignParentStart="true" />
+
+  <Button
+      android:id="@+id/bottom_left_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="bottom right"
+      android:layout_alignTop="@+id/center"
+      android:layout_toRightOf="@+id/center"
+      android:layout_marginTop="100dp"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentEnd="true" />
+
+
+
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      tools:context="ro.pub.cs.systems.eim.practicaltest01.PracticalTest01MainActivity" >
+
+
+
+    <!-- other nested layouts or widgets -->
+
+  </LinearLayout>
+</RelativeLayout>
